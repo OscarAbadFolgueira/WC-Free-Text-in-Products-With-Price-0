@@ -1,6 +1,6 @@
 === WC Free Text in Product Witch Price 0 ===
 
-Contributors: oabadfol
+Contributors: oabadfol, valhallawp
 Tags: free, text, price, woocommerce, product, shop page, categories, change text, set free, price 0, free product
 Requires at least: 4.5.0
 Tested up to: 4.8.2

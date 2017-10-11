@@ -1,12 +1,12 @@
 <?php
 /**     
  * Plugin Name: WC Free Text in Products With Price 0
- * Plugin URI: https://www.valhallapress.com/plugins/wc-free-text-in-products-with-price-0/
- * Version: 0.1
+ * Plugin URI: https://www.valhallawp.com/plugins/wc-free-text-in-products-with-price-0/
+ * Version: 1.0
  * Description: This plugin lets you show the text "Free!" in products with price 0.
  * Author: oabadfol
  * Tested up to: 4.8.2
- * Author URI: http://www.valhallapress.com
+ * Author URI: http://www.valhallawp.com
  * Text Domain: valh-wcftipwp0
  * Domain Path: /languages/
  * License: GNU General Public License v3.0
@@ -48,9 +48,9 @@ if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', g
 					if ( $product->is_on_sale() && $product->get_regular_price() ) {
 						$regular_price = wc_get_price_to_display( $product, array( 'qty' => 1, 'price' => $product->get_regular_price() ) );
 
-						$price = wc_format_price_range( $regular_price, __( 'Free!', 'woocommerce' ) );
+						$price = wc_format_price_range( $regular_price, __( 'Free!', 'valh-wcftipwp0' ) );
 					} else {
-						$price = '<span class="amount">' . __( 'Free!', 'woocommerce' ) . '</span>';
+						$price = '<span class="amount">' . __( 'Free!', 'valh-wcftipwp0' ) . '</span>';
 					}
 				}
 
